@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj",
+        "projectName": "ApplicationTier.Domain",
+        "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj",
+        "packagesPath": "/Users/nguyenminhtri/.nuget/packages/",
+        "outputPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenminhtri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFrameworkCore.Scaffolding.Handlebars": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj",
+        "projectName": "ApplicationTier.Infrastructure",
+        "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj",
+        "packagesPath": "/Users/nguyenminhtri/.nuget/packages/",
+        "outputPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenminhtri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj": {
+                "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

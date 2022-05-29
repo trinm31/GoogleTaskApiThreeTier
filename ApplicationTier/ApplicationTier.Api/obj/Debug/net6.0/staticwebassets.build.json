@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Xlg6MvxhRmun/deHB6El+WJ3yj8bXsJqENfmewnPRRQ=",
+  "Source": "ApplicationTier.Api",
+  "BasePath": "_content/ApplicationTier.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,17 @@
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/bin/Debug/net6.0/ApplicationTier.Infrastructure.deps.json
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/bin/Debug/net6.0/ApplicationTier.Infrastructure.dll
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/bin/Debug/net6.0/ref/ApplicationTier.Infrastructure.dll
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/bin/Debug/net6.0/ApplicationTier.Infrastructure.pdb
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/bin/Debug/net6.0/ApplicationTier.Domain.dll
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/bin/Debug/net6.0/ApplicationTier.Domain.pdb
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.csproj.AssemblyReference.cache
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.AssemblyInfoInputs.cache
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.AssemblyInfo.cs
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.csproj.CopyComplete
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.dll
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ref/ApplicationTier.Infrastructure.dll
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.pdb
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/bin/Debug/net6.0/ApplicationTier.Infrastructure.runtimeconfig.json
+/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/Debug/net6.0/ApplicationTier.Infrastructure.genruntimeconfig.cache
