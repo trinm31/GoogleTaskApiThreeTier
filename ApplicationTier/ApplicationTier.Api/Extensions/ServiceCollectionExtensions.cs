@@ -1,4 +1,6 @@
+using ApplicationTier.Api.Authorization;
 using ApplicationTier.Domain.Interfaces;
+using ApplicationTier.Domain.Interfaces.Authorization;
 using ApplicationTier.Domain.Interfaces.Services;
 using ApplicationTier.Domain.Models;
 using ApplicationTier.Infrastructure;
@@ -20,7 +22,7 @@ public static class ServiceCollectionExtensions
         services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(AppSettings.ConnectionString,
-                    sqlOptions => sqlOptions.CommandTimeout(120));
+                    sqlOptions => sqlOptions.CommandTimeout(12000));
                 options.UseLazyLoadingProxies();
             }
         );
@@ -28,6 +30,8 @@ public static class ServiceCollectionExtensions
         services.AddScoped<Func<ApplicationDbContext>>((provider) => () => provider.GetService<ApplicationDbContext>());
         services.AddScoped<DbFactory>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IJwtUtils, JwtUtils>();
+        services.AddScoped<IUserService, UserService>();
 
         return services;
     }

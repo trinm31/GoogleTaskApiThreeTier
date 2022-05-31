@@ -71,7 +71,8 @@ namespace ApplicationTier.Services
                 user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password);
 
                 // save user
-                await _unitOfWork.Repository<User>().InsertAsync(user);
+                var userRepos = _unitOfWork.Repository<User>();
+                await userRepos.InsertAsync(user);
 
                 await _unitOfWork.CommitTransaction();
             }
