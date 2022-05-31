@@ -12,3 +12,17 @@
 /Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/obj/Debug/net6.0/ref/ApplicationTier.Domain.dll
 /Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/obj/Debug/net6.0/ApplicationTier.Domain.pdb
 /Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/obj/Debug/net6.0/ApplicationTier.Domain.genruntimeconfig.cache
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.dll
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.pdb
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\bin\Debug\net6.0\ApplicationTier.Domain.deps.json
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\bin\Debug\net6.0\ApplicationTier.Domain.runtimeconfig.json
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\bin\Debug\net6.0\ApplicationTier.Domain.dll
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\bin\Debug\net6.0\ApplicationTier.Domain.pdb
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.csproj.AssemblyReference.cache
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.AssemblyInfoInputs.cache
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.AssemblyInfo.cs
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.csproj.CoreCompileInputs.cache
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\refint\ApplicationTier.Domain.dll
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ApplicationTier.Domain.genruntimeconfig.cache
+C:\Users\tri.nguyen\Source\Repos\GoogleTaskApiThreeTier\ApplicationTier\ApplicationTier.Domain\obj\Debug\net6.0\ref\ApplicationTier.Domain.dll

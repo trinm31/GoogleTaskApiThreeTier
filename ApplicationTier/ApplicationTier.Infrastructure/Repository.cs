@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using ApplicationTier.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -81,5 +82,47 @@ public class Repository<T> : IRepository<T> where T : class
         {
             await DbContext.SaveChangesAsync();
         }
+    }
+
+    public async Task<T> GetFirstOrDefaultAsync(Expression<Func<T, bool>> filter = null, string includeProperties = null)
+    {
+        IQueryable<T> query = Entities;
+        if (filter != null)
+        {
+            query = query.Where(filter);
+        }
+
+        if (includeProperties != null)
+        {
+            foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProp);
+            }
+        }
+        return await query.FirstOrDefaultAsync();
+    }
+
+    public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
+    {
+        IQueryable<T> query = Entities;
+        if (filter != null)
+        {
+            query = query.Where(filter);
+        }
+
+        if (includeProperties != null)
+        {
+            foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProp);
+            }
+        }
+
+        if (orderBy != null)
+        {
+            return await orderBy(query).ToListAsync();
+        }
+
+        return await query.ToListAsync();
     }
 }

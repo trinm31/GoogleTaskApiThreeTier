@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationTier.Domain.Interfaces;
@@ -59,4 +60,26 @@ public interface IRepository<T> where T : class
         /// <param name="saveChanges"></param>
         /// <returns></returns>
         Task DeleteRangeAsync(IEnumerable<T> entities, bool saveChanges = true);
+        /// <summary>
+        /// To Get All entity with conditions
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <param name="orderBy"></param>
+        /// <param name="includeProperties"></param>
+        /// <returns></returns>
+        Task<IEnumerable<T>> GetAllAsync(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+            string includeProperties = null
+        );
+        /// <summary>
+        /// To get an entity with conditions
+        /// </summary>
+        /// <param name="filter"></param>  
+        /// <param name="includeProperties"></param>
+        /// <returns></returns>
+        Task<T> GetFirstOrDefaultAsync(
+            Expression<Func<T, bool>> filter = null,
+            string includeProperties = null
+        );
 }

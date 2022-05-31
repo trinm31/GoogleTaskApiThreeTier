@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Services/ApplicationTier.Services.csproj": {}
+    "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Services\\ApplicationTier.Services.csproj": {}
   },
   "projects": {
-    "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj": {
+    "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Domain\\ApplicationTier.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Domain\\ApplicationTier.Domain.csproj",
         "projectName": "ApplicationTier.Domain",
-        "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj",
-        "packagesPath": "/Users/nguyenminhtri/.nuget/packages/",
-        "outputPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/obj/",
+        "projectPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Domain\\ApplicationTier.Domain.csproj",
+        "packagesPath": "C:\\Users\\tri.nguyen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nguyenminhtri/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tri.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +40,15 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "EntityFrameworkCore.Scaffolding.Handlebars": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.3, )"
             },
@@ -61,6 +71,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.18.0, )"
             }
           },
           "imports": [
@@ -78,34 +92,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj": {
+    "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Infrastructure\\ApplicationTier.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Infrastructure\\ApplicationTier.Infrastructure.csproj",
         "projectName": "ApplicationTier.Infrastructure",
-        "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj",
-        "packagesPath": "/Users/nguyenminhtri/.nuget/packages/",
-        "outputPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Infrastructure\\ApplicationTier.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\tri.nguyen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nguyenminhtri/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tri.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj": {
-                "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Domain/ApplicationTier.Domain.csproj"
+              "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Domain\\ApplicationTier.Domain.csproj": {
+                "projectPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Domain\\ApplicationTier.Domain.csproj"
               }
             }
           }
@@ -150,34 +166,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Services/ApplicationTier.Services.csproj": {
+    "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Services\\ApplicationTier.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Services/ApplicationTier.Services.csproj",
+        "projectUniqueName": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Services\\ApplicationTier.Services.csproj",
         "projectName": "ApplicationTier.Services",
-        "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Services/ApplicationTier.Services.csproj",
-        "packagesPath": "/Users/nguyenminhtri/.nuget/packages/",
-        "outputPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Services/obj/",
+        "projectPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Services\\ApplicationTier.Services.csproj",
+        "packagesPath": "C:\\Users\\tri.nguyen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nguyenminhtri/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tri.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj": {
-                "projectPath": "/Users/nguyenminhtri/Documents/Develop/GoogleTaskThreeTierApi/ApplicationTier/ApplicationTier.Infrastructure/ApplicationTier.Infrastructure.csproj"
+              "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Infrastructure\\ApplicationTier.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\tri.nguyen\\Source\\Repos\\GoogleTaskApiThreeTier\\ApplicationTier\\ApplicationTier.Infrastructure\\ApplicationTier.Infrastructure.csproj"
               }
             }
           }
@@ -206,7 +224,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

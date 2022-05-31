@@ -11,6 +11,7 @@ public partial class ApplicationDbContext: Microsoft.EntityFrameworkCore.DbConte
     }
 
     public DbSet<TaskItem> TaskItems { get; set; }
+    public DbSet<User> Users { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
