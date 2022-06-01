@@ -1,3 +1,4 @@
+using ApplicationTier.Api.Authorization;
 using ApplicationTier.Domain.Dtos;
 using ApplicationTier.Domain.Entities;
 using ApplicationTier.Domain.Interfaces.Services;
@@ -7,13 +8,17 @@ namespace ApplicationTier.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class TaskController : ControllerBase
+[Authorize]
+public class TasksController : ControllerBase
 {
     private readonly ITaskService _taskService;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public TaskController(ITaskService taskService)
+
+    public TasksController(ITaskService taskService, IHttpContextAccessor httpContextAccessor)
     {
         _taskService = taskService;
+        _httpContextAccessor = httpContextAccessor;
     }
 
     #region CRUD
@@ -27,7 +32,8 @@ public class TaskController : ControllerBase
     [HttpPut]
     public async Task Update(TaskUpSertDto taskItem)
     {
-        await _taskService.Update(taskItem);
+        var user = GetCurrentUser();
+        await _taskService.Update(taskItem, user);
     }
 
     [HttpGet("{id:int}")]
@@ -39,13 +45,15 @@ public class TaskController : ControllerBase
     [HttpPost]
     public async Task Add(TaskUpSertDto taskItem)
     {
-        await _taskService.Add(taskItem);
+        var user = GetCurrentUser();
+        await _taskService.Add(taskItem, user);
     }
 
     [HttpDelete("{id}")]
     public async Task Delete([FromRoute] int id)
     {
-        await _taskService.Delete(id);
+        var user = GetCurrentUser();
+        await _taskService.Delete(id, user);
     }
 
     [HttpGet("[action]/{id:int}")]
@@ -55,4 +63,9 @@ public class TaskController : ControllerBase
     }
 
     #endregion
+
+    private User GetCurrentUser()
+    {
+        return (User)_httpContextAccessor.HttpContext.Items["User"];
+    }
 }

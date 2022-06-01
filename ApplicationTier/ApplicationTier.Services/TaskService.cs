@@ -19,21 +19,22 @@ public class TaskService : ITaskService
 
     public async Task<IList<TaskItem>> GetAll()
     {
-        return await _unitOfWork.Repository<TaskItem>().GetAllAsync();
+        var TaskItems = await _unitOfWork.Repository<TaskItem>().GetAllAsync(x=> x.IsDeleted == false);
+        return TaskItems.ToList();
     }
 
     public async Task<TaskItem> GetOne(int taskId)
     {
-        return await _unitOfWork.Repository<TaskItem>().FindAsync(taskId);
+        return await _unitOfWork.Repository<TaskItem>().GetFirstOrDefaultAsync(x=> x.Id == taskId);
     }
 
-    public async Task Update(TaskUpSertDto taskItemDto)
+    public async Task Update(TaskUpSertDto taskItemDto, User user)
     {
         try
         {
-            var taskItem = _mapper.Map<TaskItem>(taskItemDto);
-            
             await _unitOfWork.BeginTransaction();
+
+            var taskItem = _mapper.Map<TaskItem>(taskItemDto);
 
             var taskRepos = _unitOfWork.Repository<TaskItem>();
             var task = await taskRepos.FindAsync(taskItem.Id);
@@ -42,7 +43,10 @@ public class TaskService : ITaskService
 
             task.Name = taskItem.Name;
             task.Content = taskItem.Content;
-            task.DateAdded = taskItem.DateAdded;
+            task.ListTaskId = taskItem.ListTaskId;
+            task.UpdatedDate = DateTime.Now;
+            task.UpdatedById = user.Id;
+
             await _unitOfWork.CommitTransaction();
         }
         catch (Exception e)
@@ -52,15 +56,19 @@ public class TaskService : ITaskService
         }
     }
 
-    public async Task Add(TaskUpSertDto taskItemDto)
+    public async Task Add(TaskUpSertDto taskItemDto, User user)
     {
         try
         {
-            var taskItem = _mapper.Map<TaskItem>(taskItemDto);
-            
             await _unitOfWork.BeginTransaction();
 
+            var taskItem = _mapper.Map<TaskItem>(taskItemDto);
+
             var taskRepos = _unitOfWork.Repository<TaskItem>();
+
+            taskItem.CreatedDate = DateTime.Now;
+            taskItem.CreatedById = user.Id;
+
             await taskRepos.InsertAsync(taskItem);
 
             await _unitOfWork.CommitTransaction();
@@ -72,7 +80,7 @@ public class TaskService : ITaskService
         }
     }
 
-    public async Task Delete(int taskId)
+    public async Task Delete(int taskId, User user)
     {
         try
         {
@@ -83,7 +91,7 @@ public class TaskService : ITaskService
             if (task == null)
                 throw new KeyNotFoundException();
 
-            await taskRepos.DeleteAsync(task);
+            task.IsDeleted = true;
 
             await _unitOfWork.CommitTransaction();
         }

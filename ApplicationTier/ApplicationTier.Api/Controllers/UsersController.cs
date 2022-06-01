@@ -1,4 +1,5 @@
 ﻿using ApplicationTier.Api.Authorization;
+using ApplicationTier.Domain.Entities;
 using ApplicationTier.Domain.Interfaces.Services;
 using ApplicationTier.Domain.Models;
 using ApplicationTier.Domain.Models.Users;
@@ -10,21 +11,18 @@ namespace ApplicationTier.Api.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
         private IUserService _userService;
         private IMapper _mapper;
-        private readonly AppSettings _appSettings;
 
         public UsersController(
             IUserService userService,
-            IMapper mapper,
-            IOptions<AppSettings> appSettings)
+            IMapper mapper)
         {
             _userService = userService;
             _mapper = mapper;
-            _appSettings = appSettings.Value;
         }
 
         [AllowAnonymous]
